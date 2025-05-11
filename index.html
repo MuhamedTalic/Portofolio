@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/364924d46d.js" crossorigin="anonymous"></script>
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+      emailjs.init({
+        publicKey: "p1_RrQdGW4Hu4hMWc",
+      });
+    })();
+</script>
+</script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portofolio">My work</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Sofware engineer</p>
+            <h1>Hi, I'm <span>Muhamed</span> <br> Talić </h1>
+        </div>
+    </div>
+</div>
+<!--------about me-------->
+<div id=about>
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Since childhood, I have been fascinated by technology, particularly Computer Science. 
+                    During my studies and short experience, I see myself working in a role that allows me to grow as a engineer, 
+                    whether it's on the full stack, cloud & DevOps or other categories . I'm open to all areas and eager to learn 
+                    and contribute wherever I can. My goal is to deepen my skills, work on real-world projects, and become part 
+                    of a team where I can continue developing innovative and efficient solutions.  </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Figma Canva </li>
+                        <li><span>Web development</span><br>React</li>
+                        <li><span>Software develepment</span><br>C++ (beginner), Java (beginner), Arduino IDE</li>
+                        <li><span>Databases</span><br>SQL Server 2016 (beginner), MongoDB (beginner), MySQL (beginner) </li>
+                        <li><span>System Administration</span><br>Microsoft Server 2016 (beginner), NetAcad (beginner), Linux </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>May 2024 - June 2024</span><br>ICT Engineer Internship at BH Telecom</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2021 - 2025</span><br>BE of Software engineering, University of Zenica</li>
+                        <li><span>2017 - 2021</span><br>Technical School, Zenica</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--------services-------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Web Design</h2>
+                <p>text text</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>UI/UX Design</h2>
+                <p>text text</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>text text</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--------portofolio-------->
+
+<div id="portofolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>App</h3>
+                    <p>text text</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>App</h3>
+                    <p>text text</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>App</h3>
+                    <p>text text</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!--------contact-------->    
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact me</h1>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/muhamed-talic-b1052929a/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/MuhamedTalic"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://wa.me/38762392365"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+                <a href="images/Muhamed Talic- CV-main.pdf" download="" class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form id="contact-form">
+                    <input type="text" name="Name" id="name" placeholder="Name" required>
+                    <input type="email" name="Email" id="email" placeholder="Email" required>
+                    <textarea name="message" id="message" rows="6" placeholder="Message" class="contact-inputs" required></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Muhamed Talić</p>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname) {
+        for (tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+
+<!--------menu-------->
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu() {
+        sidemenu.style.right = "0";
+    }
+    function closemenu() {
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+<!--------form-------->
+<script>
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const form = this; //reference to the form element
+
+    emailjs.send("service_90gzfpi", "template_rcsinhg", {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        message: document.getElementById("message").value
+    }).then(function(response) {
+        alert("Message sent successfully!");
+        form.reset(); //this clears the form
+    }, function(error) {
+        alert("FAILED to send message. Error: " + JSON.stringify(error));
+    });
+});
+</script>
+
+
+
+</body>
+</html>
