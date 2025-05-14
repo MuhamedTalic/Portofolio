@@ -24,7 +24,9 @@
 <div id="header">
     <div class="container">
         <nav>
-            <img src="images/logo.png" class="logo">
+            <a href="https://muhamedtalic.github.io/Portofolio/" class="logo-link">
+                <img src="images/logo.png" class="logo">
+            </a>
             <ul id="sidemenu">
                 <li><a href="#header">Home</a></li>
                 <li><a href="#about">About Me</a></li>
@@ -57,17 +59,15 @@
                     of a team where I can continue developing innovative and efficient solutions.  </p>
 
                 <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links active-link" onclick="opentab('education')">Education</p>
                     <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                    
                 </div>
-                <div class="tab-contents active-tab" id="skills">
+                <div class="tab-contents active-tab" id="education">
                     <ul>
-                        <li><span>UI/UX</span><br>Figma Canva </li>
-                        <li><span>Web development</span><br>React</li>
-                        <li><span>Software develepment</span><br>C++ (beginner), Java (beginner), Arduino IDE</li>
-                        <li><span>Databases</span><br>SQL Server 2016 (beginner), MongoDB (beginner), MySQL (beginner) </li>
-                        <li><span>System Administration</span><br>Microsoft Server 2016 (beginner), NetAcad (beginner), Linux </li>
+                        <li><span>2021 - 2025</span><br>BE of Software engineering, University of Zenica</li>
+                        <li><span>2017 - 2021</span><br>Technical School, Zenica</li>
                     </ul>
                 </div>
                 <div class="tab-contents" id="experience">
@@ -75,10 +75,13 @@
                         <li><span>May 2024 - June 2024</span><br>ICT Engineer Internship at BH Telecom</li>
                     </ul>
                 </div>
-                <div class="tab-contents" id="education">
+                <div class="tab-contents" id="skills">
                     <ul>
-                        <li><span>2021 - 2025</span><br>BE of Software engineering, University of Zenica</li>
-                        <li><span>2017 - 2021</span><br>Technical School, Zenica</li>
+                        <li><span>UI/UX</span><br>Figma, Canva </li>
+                        <li><span>Web development</span><br>React, Node.js, Java</li>
+                        <li><span>Software develepment</span><br>C++, Python, Arduino IDE</li>
+                        <li><span>Databases</span><br>SQL Server 2016, MongoDB, MySQL </li>
+                        <li><span>System Administration</span><br>Microsoft Server 2016, NetAcad, Linux </li>
                     </ul>
                 </div>
             </div>
@@ -94,19 +97,19 @@
             <div>
                 <i class="fas fa-code"></i>
                 <h2>Web Design</h2>
-                <p>text text</p>
+                <p>text</p>
                 <a href="#">Learn more</a>
             </div>
             <div>
                 <i class="fas fa-crop-alt"></i>
                 <h2>UI/UX Design</h2>
-                <p>text text</p>
+                <p>text</p>
                 <a href="#">Learn more</a>
             </div>
             <div>
                 <i class="fa-brands fa-app-store"></i>
-                <h2>App Design</h2>
-                <p>text text</p>
+                <h2>Software development</h2>
+                <p>text</p>
                 <a href="#">Learn more</a>
             </div>
         </div>
@@ -122,29 +125,29 @@
             <div class="work">
                 <img src="images/work-1.png">
                 <div class="layer">
-                    <h3>App</h3>
-                    <p>text text</p>
+                    <h3>Mobile App</h3>
+                    <p>Flutter</p>
                     <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
                 </div>
             </div>
             <div class="work">
                 <img src="images/work-2.png">
                 <div class="layer">
-                    <h3>App</h3>
-                    <p>text text</p>
+                    <h3>DevOps Project</h3>
+                    <p>Docker</p>
                     <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
                 </div>
             </div>
             <div class="work">
                 <img src="images/work-3.png">
                 <div class="layer">
-                    <h3>App</h3>
-                    <p>text text</p>
-                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    <h3>Vehicle Registration System</h3>
+                    <p>CRUD operations</p>
+                    <a href="https://github.com/MuhamedTalic/Vehicle-registration-system" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-up-right-from-square"></i></a>
                 </div>
             </div>
         </div>
-        <a href="#" class="btn">See more</a>
+        <a href="https://github.com/MuhamedTalic?tab=repositories" class="btn">See more</a>
     </div>
 </div>
 
@@ -171,9 +174,9 @@
             </div>
         </div>
     </div>
-    <div class="copyright">
-        <p>Copyright © Muhamed Talić</p>
-    </div>
+</div>
+<div class="copyright">
+    <p>Copyright © Muhamed Talić</p>
 </div>
 
 <script>
@@ -191,11 +194,8 @@
         document.getElementById(tabname).classList.add("active-tab");
     }
 
-</script>
+//--------menu--------
 
-
-<!--------menu-------->
-<script>
     var sidemenu = document.getElementById("sidemenu");
     function openmenu() {
         sidemenu.style.right = "0";
@@ -203,10 +203,9 @@
     function closemenu() {
         sidemenu.style.right = "-200px";
     }
-</script>
 
-<!--------form-------->
-<script>
+//--------form--------
+
 document.getElementById('contact-form').addEventListener('submit', function(event) {
     event.preventDefault();
 
@@ -224,8 +223,6 @@ document.getElementById('contact-form').addEventListener('submit', function(even
     });
 });
 </script>
-
-
 
 </body>
 </html>
